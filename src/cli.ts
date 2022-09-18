@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 import { execute } from '.';
+import nsblob from './nsblob';
 
-for (const arg of process.argv.slice(2)) {
-	execute(arg);
-}
+Promise.all(process.argv.slice(2).map(execute)).then(() => {
+	nsblob.socket.close();
+});
