@@ -13,6 +13,8 @@
 	"keywords": [],
 	"license": "GPL-3.0-or-later",
 	"dependencies": {
-		"nsblob": "^0.2.10"
+		"blakets": "^0.1.12",
+		"nodesite.eu-core": "^1.3.1",
+		"socket.io-client": "^3.1.3"
 	}
 }
